@@ -1,0 +1,1 @@
+# vulacoin-hotspot-configuration
