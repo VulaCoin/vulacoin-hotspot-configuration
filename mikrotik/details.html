@@ -1,0 +1,7 @@
+$(if http-header == "Access-Control-Allow-Origin")*$(endif)
+{
+   "logged_in": $(if logged-in == 'yes')true$(else)false$(endif),
+   "ip": "$(ip)",
+   "mac": "$(mac)",
+   "hotspot_server": "$(server-name)"
+}

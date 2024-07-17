@@ -1,0 +1,13 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+$(if http-status == 302)Hotspot redirect$(endif)
+$(if http-header == "Location")https://merchant_hostname/captive2/quick-connect/merchant_hash/?ip=$(ip)&mt_user_mac=$(mac)&mt_postback=$(link-login-only)&ap_mac=$(server-name)$(endif)
+<html>
+<head>
+<title>...</title>
+<meta http-equiv="refresh" content="0; url=https://merchant_hostname/captive2/quick-connect/merchant_hash/?ip=$(ip)&mt_user_mac=$(mac)&mt_postback=$(link-login-only)&ap_mac=$(server-name)">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+</head>
+<body>
+</body>
+</html>
